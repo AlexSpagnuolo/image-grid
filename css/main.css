@@ -15,3 +15,26 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    float: left;
+    width: 50%;
+  }
+
+  img:first-of-type {
+    width: 100%;
+    display: block;
+  }
+
+}
