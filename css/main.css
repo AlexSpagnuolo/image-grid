@@ -16,6 +16,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 @media only screen and (min-width: 25em) {
 
   img {
@@ -34,6 +38,36 @@ html {
 
   img:first-of-type {
     width: 100%;
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    width: 33.33%;
+  }
+
+  img:first-of-type {
+    width: 100%;
+    display: block;
+  }
+
+  img:last-of-type {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  img:first-of-type {
+    width: 66.66%;
+    float: left;
+  }
+
+  img:last-of-type {
     display: block;
   }
 
